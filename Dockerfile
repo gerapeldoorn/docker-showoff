@@ -10,7 +10,7 @@ RUN rm -rf /var/cache/apk/*
 # Install showoff
 RUN gem update --no-ri --no-doc
 
-WORKDIR /data
+WORKDIR /srv/showoff
 
 ENTRYPOINT ["showoff", "serve"]
 
