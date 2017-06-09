@@ -1,4 +1,4 @@
-FROM ruby:2.4-alpine
+FROM wanix/showoff
 RUN apk update && apk upgrade
 
 # Install prereqs 
@@ -8,7 +8,7 @@ RUN apk add bash ruby-dev make gcc musl-dev zlib-dev g++ cmake git
 RUN rm -rf /var/cache/apk/*
 
 # Install showoff
-RUN gem install showoff --no-ri --no-doc
+RUN gem update --no-ri --no-doc
 
 WORKDIR /data
 
