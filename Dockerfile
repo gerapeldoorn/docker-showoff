@@ -13,3 +13,4 @@ RUN gem install showoff --no-ri --no-doc
 WORKDIR /data
 
 ENTRYPOINT ["showoff", "serve"]
+
