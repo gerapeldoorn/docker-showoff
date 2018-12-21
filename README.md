@@ -9,7 +9,7 @@ version: "3.1"
 services:
   showoff:
     restart: unless-stopped
-    image: gerapeldoorn/showoff:0.19.2
+    image: gerapeldoorn/showoff:0.20.0
     ports:
       - "9090:9090"
     volumes:
